@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Crud Contatos</title>
+    <style>
+        *{
+            margin: 0 auto;
+        }
+
+        .jumbotron{
+            width: 800px;
+        }
+
+        .jumbotron h1{
+            text-align: center;
+        }
+
+        .panel-form{
+            width: 800px;
+        }
+
+        .panel-form button{
+            margin: 15px 0px;
+        }
+
+        .panel-table{
+            width: 800px;  
+            margin-top: 15px;  
+        }
+
+        .panel-table button{
+            margin: 0 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Formulário de contatos</h1>
+    </div>
+
+    <div class="panel-form">
+        <form>
+            <label>Código</label>
+            <input class="form-control" type="text" name="id" readonly>
+            <label>Nome</label>
+            <input class="form-control" type="text" name="name">
+            <label>Email</label>
+            <input class="form-control" type="email" name="email">
+            <label>Telefone</label>
+            <input class="form-control" type="text" name="phone">
+            <button  id="btnSave" class="btn btn-primary btn-lg btn-block">Salvar</button>
+        </form>
+    </div>
+
+    <div class="panel-table">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Telefone</th>
+                    <th scope= "col" colspan="2" class="text-center">Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tableBodyContacts"></tbody>
+        </table>
+    </div>
+
+    <script src="resources/js/contact/contact.js"></script>
+    <script src="resources/js/contact/repository.js"></script>
+    <script src="resources/js/contact/view-table.contacts.js"></script>
+    <script src="resources/js/contact/view-form-contacts.js"></script>
+    <script src="resources/js/contact/app.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
